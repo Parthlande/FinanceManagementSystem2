@@ -1,4 +1,6 @@
-const host = "http://localhost:4000";
+// Dynamically set the backend API URL
+const host = process.env.REACT_APP_API_URL || "http://localhost:4000";
+
 export const setAvatarAPI = `${host}/api/auth/setAvatar`;
 export const registerAPI = `${host}/api/auth/register`;
 export const loginAPI = `${host}/api/auth/login`;
